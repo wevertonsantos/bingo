@@ -25,3 +25,33 @@ body {
     font-weight: bolder;
     font-size: 60px;
   }
+  
+  #container_numero {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  
+  #container_numero .botao-numero {
+    text-align: center;
+  
+    color: rgb(255, 255, 255);
+  
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+  
+    font-size: 40px;
+  }
+  
+  #container_apagar {
+    width: 100%;
+    text-align: left;
+    margin: 1.5%;
+  }
+  
+  .botao-apagar {
+    text-align: center;
+    padding: 10px 30px 10px 40px;
+    font-size: 15px;
+  }
