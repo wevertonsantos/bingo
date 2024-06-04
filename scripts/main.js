@@ -12,3 +12,30 @@ letras.forEach((letra) => {
     textoLetra.textContent = letra
     containerLetraX.insertAdjacentElement('afterbegin', textoLetra)
 })
+
+const tabelaNumeros = (i, x) => {
+    const numeroAteX = doc.createElement('div')
+
+    if (i <= x) {
+        numeroAteX.id = `numeroAte${x}`
+        containerLetraNumero.appendChild(numeroAteX)
+    }
+
+    while (i < x) {
+        const botaoNumero = doc.createElement('button')
+
+        botaoNumero.id = `${i}`
+        botaoNumero.className = 'botao-numero'
+        botaoNumero.textContent = i
+
+        numeroAteX.appendChild(botaoNumero)
+
+        i++
+    }
+}
+
+tabelaNumeros(listaContador[0], listaTotalNumeros[0])
+tabelaNumeros(listaContador[1], listaTotalNumeros[1])
+tabelaNumeros(listaContador[2], listaTotalNumeros[2])
+tabelaNumeros(listaContador[3], listaTotalNumeros[3])
+tabelaNumeros(listaContador[4], listaTotalNumeros[4])
