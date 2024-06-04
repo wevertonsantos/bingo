@@ -1,0 +1,27 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+  }
+  
+  #container {
+    width: 100%;
+  }
+  
+  #container_letra_x {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+  }
+  
+  #container_letra_x .letra {
+    color: rgb(0, 0, 0);
+  
+    width: 100%;
+    font-weight: bolder;
+    font-size: 60px;
+  }
