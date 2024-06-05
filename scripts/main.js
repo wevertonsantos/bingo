@@ -3,9 +3,9 @@ const containerLetraNumero = doc.querySelector('#container_numero')
 const containerLetraX = doc.querySelector('#container_letra_x')
 const botaoApagar = doc.querySelector('.botao-apagar')
 
-var listaContador = [1, 16, 31, 46, 61]
-var listaTotalNumeros = [16, 31, 46, 61, 76]
-var letras = ['B', 'I', 'N', 'G', 'O']
+const listaContador = [1, 16, 31, 46, 61]
+const listaTotalNumeros = [16, 31, 46, 61, 76]
+const letras = ['B', 'I', 'N', 'G', 'O']
 letras.reverse()
 
 letras.forEach((letra) => {
@@ -25,14 +25,35 @@ const tabelaNumeros = (i, x) => {
 
     while (i < x) {
         const botaoNumero = doc.createElement('button')
-
-        botaoNumero.id = `${i}`
-        botaoNumero.className = 'botao-numero'
-        botaoNumero.textContent = i
+        const numero = i
+        const classe = 'botao-numero'
 
         numeroAteX.appendChild(botaoNumero)
 
+        addAtributosBotao(botaoNumero, numero, classe)
+        clickBotao(numero)
+
         i++
+    }
+
+}
+
+const addAtributosBotao = (botaoNumero, numero, classe) => {
+    botaoNumero.id = numero
+    botaoNumero.className = classe
+    botaoNumero.textContent = numero
+}
+
+const clickBotao = (idNumero) => {
+    const numero = doc.getElementById(`${idNumero}`)
+    let numeroClicado = 0
+
+    numero.onclick = () => {
+        numero.style.backgroundColor = 'black'
+    }
+
+    numero.ondblclick = () => {
+        numero.style.backgroundColor = ''
     }
 }
 
