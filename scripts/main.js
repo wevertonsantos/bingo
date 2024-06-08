@@ -33,6 +33,7 @@ const tabelaNumeros = (i, x) => {
 
     while (i < x) {
         const botaoNumero = doc.createElement('button')
+        const botaoNumero = $.createElement('button')
         const numero = i
         const classe = 'botao-numero'
 
@@ -40,6 +41,7 @@ const tabelaNumeros = (i, x) => {
 
         addAtributosBotao(botaoNumero, numero, classe)
         clickBotao(numero)
+        limparBotao(numero)
 
         i++
     }
