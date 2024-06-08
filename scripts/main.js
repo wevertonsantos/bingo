@@ -45,7 +45,12 @@ const tabelaNumeros = (i, x) => {
 const addAtributosBotao = (botaoNumero, numero, classe) => {
     botaoNumero.id = numero
     botaoNumero.className = classe
-    botaoNumero.textContent = numero
+    if(numero <= 9){
+        numero = `0${numero}`
+        botaoNumero.textContent = numero
+    }else{
+        botaoNumero.textContent = numero
+    }
 }
 
 const clickBotao = (idNumero) => {
