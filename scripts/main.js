@@ -9,10 +9,13 @@ const listaUltimoContador = [16, 31, 46, 61, 76]
 const letras = ['B', 'I', 'N', 'G', 'O']
 letras.reverse()
 
+letras.reverse()
 letras.forEach((letra) => {
     var textoLetra = doc.createElement('p')
+    const textoLetra = $.createElement('p')
     textoLetra.className = 'letra'
     textoLetra.textContent = letra
+    textoLetra.id = letra
     containerLetraX.insertAdjacentElement('afterbegin', textoLetra)
 })
 
