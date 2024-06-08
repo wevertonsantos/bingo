@@ -123,6 +123,26 @@ const clickBotao = (idNumero) => {
     }
 }
 
+const limparBotao = (idNumero) => {
+    const numero = $.getElementById(`${idNumero}`)
+    const letraB = $.getElementById('B')
+    const letraI = $.getElementById('I')
+    const letraN = $.getElementById('N')
+    const letraG = $.getElementById('G')
+    const letraO = $.getElementById('O')
+
+    botaoLimpar.addEventListener('click', () => {
+        letraB.classList.remove('corFundoLetraB')
+        letraI.classList.remove('corFundoLetraI')
+        letraN.classList.remove('corFundoLetraN')
+        letraG.classList.remove('corFundoLetraG')
+        letraO.classList.remove('corFundoLetraO')
+        numero.classList.remove('corFundo1Ate15')
+        numero.classList.remove('corFundo16Ate30')
+        numero.classList.remove('corFundo31Ate45')
+        numero.classList.remove('corFundo46Ate60')
+        numero.classList.remove('corFundo61Ate75')
+    })
 }
 
 tabelaNumeros(listaContador[0], listaTotalNumeros[0])
