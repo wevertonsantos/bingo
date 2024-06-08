@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+
+  display: flex;
+  height: 100vh;
 }
 
 button {
@@ -12,6 +15,7 @@ button {
 }
 
 #container {
+  margin: auto;
   width: 100%;
 }
 
@@ -19,7 +23,6 @@ button {
   text-align: center;
   align-items: center;
   display: flex;
-  height: 65px;
   width: 100%;
 }
 
@@ -120,7 +123,7 @@ button {
 
 #container_limpar {
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .botao-limpar {
@@ -130,8 +133,6 @@ button {
 
   border: none;
   border-radius: 50px;
-
-  margin-left: 30px;
 }
 
 .botao-limpar:hover {
