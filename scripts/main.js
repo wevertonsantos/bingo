@@ -145,8 +145,8 @@ const limparBotao = (idNumero) => {
     })
 }
 
-tabelaNumeros(listaContador[0], listaTotalNumeros[0])
-tabelaNumeros(listaContador[1], listaTotalNumeros[1])
-tabelaNumeros(listaContador[2], listaTotalNumeros[2])
-tabelaNumeros(listaContador[3], listaTotalNumeros[3])
-tabelaNumeros(listaContador[4], listaTotalNumeros[4])
+tabelaNumeros(listaPrimeiroContador[0], listaUltimoContador[0])
+tabelaNumeros(listaPrimeiroContador[1], listaUltimoContador[1])
+tabelaNumeros(listaPrimeiroContador[2], listaUltimoContador[2])
+tabelaNumeros(listaPrimeiroContador[3], listaUltimoContador[3])
+tabelaNumeros(listaPrimeiroContador[4], listaUltimoContador[4])
