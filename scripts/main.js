@@ -7,11 +7,9 @@ const botaoLimpar = $.querySelector('.botao-limpar')
 const listaPrimeiroContador = [1, 16, 31, 46, 61]
 const listaUltimoContador = [16, 31, 46, 61, 76]
 const letras = ['B', 'I', 'N', 'G', 'O']
-letras.reverse()
 
 letras.reverse()
 letras.forEach((letra) => {
-    var textoLetra = doc.createElement('p')
     const textoLetra = $.createElement('p')
     textoLetra.className = 'letra'
     textoLetra.textContent = letra
@@ -20,11 +18,9 @@ letras.forEach((letra) => {
 })
 
 const tabelaNumeros = (i, x) => {
-    const numeroAteX = doc.createElement('div')
     const numeroAteX = $.createElement('div')
 
     if (i <= x) {
-        numeroAteX.id = `numeroAte${x}`
         containerLetraNumero.appendChild(numeroAteX)
         numeroAteX.id = `numero${i}Ate${x - 1}`
         numeroAteX.className = 'conjuntoNumero'
@@ -32,7 +28,6 @@ const tabelaNumeros = (i, x) => {
     }
 
     while (i < x) {
-        const botaoNumero = doc.createElement('button')
         const botaoNumero = $.createElement('button')
         const numero = i
         const classe = 'botao-numero'
