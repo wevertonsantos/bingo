@@ -21,10 +21,14 @@ letras.forEach((letra) => {
 
 const tabelaNumeros = (i, x) => {
     const numeroAteX = doc.createElement('div')
+    const numeroAteX = $.createElement('div')
 
     if (i <= x) {
         numeroAteX.id = `numeroAte${x}`
         containerLetraNumero.appendChild(numeroAteX)
+        numeroAteX.id = `numero${i}Ate${x - 1}`
+        numeroAteX.className = 'conjuntoNumero'
+        containerNumero.appendChild(numeroAteX)
     }
 
     while (i < x) {
