@@ -4,8 +4,8 @@ const containerNumero = $.querySelector('#container_numero')
 const containerLetraX = $.querySelector('#container_letra_x')
 const botaoLimpar = $.querySelector('.botao-limpar')
 
-const listaContador = [1, 16, 31, 46, 61]
-const listaTotalNumeros = [16, 31, 46, 61, 76]
+const listaPrimeiroContador = [1, 16, 31, 46, 61]
+const listaUltimoContador = [16, 31, 46, 61, 76]
 const letras = ['B', 'I', 'N', 'G', 'O']
 letras.reverse()
 
