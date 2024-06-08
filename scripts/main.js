@@ -55,16 +55,74 @@ const addAtributosBotao = (botaoNumero, numero, classe) => {
 }
 
 const clickBotao = (idNumero) => {
-    const numero = doc.getElementById(`${idNumero}`)
-    let numeroClicado = 0
+    const numero = $.getElementById(`${idNumero}`)
+    const letraB = $.getElementById('B')
+    const letraI = $.getElementById('I')
+    const letraN = $.getElementById('N')
+    const letraG = $.getElementById('G')
+    const letraO = $.getElementById('O')
 
-    numero.onclick = () => {
-        numero.style.backgroundColor = 'black'
+    if (idNumero <= 15) {
+        numero.addEventListener('click', () => {
+            numero.classList.toggle('corFundo1Ate15')
+            letraB.classList.add('corFundoLetraB')
+
+            const pegarCorFundo1Ate15 = $.querySelector('.corFundo1Ate15')
+            if (pegarCorFundo1Ate15 == null) {
+                letraB.classList.remove('corFundoLetraB')
+            }
+        })
     }
 
-    numero.ondblclick = () => {
-        numero.style.backgroundColor = ''
+    if (idNumero >= 16 & idNumero <= 30) {
+        numero.addEventListener('click', () => {
+            numero.classList.toggle('corFundo16Ate30')
+            letraI.classList.add('corFundoLetraI')
+
+            const pegarCorFundo16Ate30 = $.querySelector('.corFundo16Ate30')
+            if (pegarCorFundo16Ate30 == null) {
+                letraI.classList.remove('corFundoLetraI')
+            }
+        })
     }
+
+    if (idNumero >= 31 & idNumero <= 45) {
+        numero.addEventListener('click', () => {
+            numero.classList.toggle('corFundo31Ate45')
+            letraN.classList.add('corFundoLetraN')
+
+            const pegarCorFundo31Ate45 = $.querySelector('.corFundo31Ate45')
+            if (pegarCorFundo31Ate45 == null) {
+                letraN.classList.remove('corFundoLetraN')
+            }
+        })
+    }
+
+    if (idNumero >= 46 & idNumero <= 60) {
+        numero.addEventListener('click', () => {
+            numero.classList.toggle('corFundo46Ate60')
+            letraG.classList.add('corFundoLetraG')
+
+            const pegarCorFundo46Ate60 = $.querySelector('.corFundo46Ate60')
+            if (pegarCorFundo46Ate60 == null) {
+                letraG.classList.remove('corFundoLetraG')
+            }
+        })
+    }
+
+    if (idNumero >= 61 & idNumero <= 75) {
+        numero.addEventListener('click', () => {
+            numero.classList.toggle('corFundo61Ate75')
+            letraO.classList.add('corFundoLetraO')
+
+            const pegarCorFundo61Ate75 = $.querySelector('.corFundo61Ate75')
+            if (pegarCorFundo61Ate75 == null) {
+                letraO.classList.remove('corFundoLetraO')
+            }
+        })
+    }
+}
+
 }
 
 tabelaNumeros(listaContador[0], listaTotalNumeros[0])
