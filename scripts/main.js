@@ -1,7 +1,8 @@
-const doc = document
-const containerLetraNumero = doc.querySelector('#container_numero')
-const containerLetraX = doc.querySelector('#container_letra_x')
-const botaoApagar = doc.querySelector('.botao-apagar')
+const $ = document
+const container = $.querySelector('#container')
+const containerNumero = $.querySelector('#container_numero')
+const containerLetraX = $.querySelector('#container_letra_x')
+const botaoLimpar = $.querySelector('.botao-limpar')
 
 const listaContador = [1, 16, 31, 46, 61]
 const listaTotalNumeros = [16, 31, 46, 61, 76]
